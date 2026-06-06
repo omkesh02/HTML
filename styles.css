@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0d1b2a 0%, #1b263b 45%, #f8f9fa 100%);
+}
+
+header.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.hero-section {
+  min-height: calc(100vh - 72px);
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 45%), linear-gradient(180deg, rgba(13, 27, 42, 0.95), rgba(11, 19, 32, 0.9));
+}
+
+.hero-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.info-card,
+.skill-card,
+.project-card {
+  border: none;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.project-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-card .card-footer {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.contact-form {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding-top: 4rem;
+  }
+  .project-card img {
+    height: 180px;
+  }
+}
