@@ -1,0 +1,21 @@
+/* Minimal styles for the small starter site */
+:root{
+  --bg:#f7fafc;--card:#ffffff;--accent:#2563eb;--text:#0f172a;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:var(--text);background:var(--bg);line-height:1.5}
+.container{max-width:980px;margin:0 auto;padding:1rem}
+.site-header{background:var(--card);border-bottom:1px solid #e6edf6}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+nav a{color:var(--text);margin-left:1rem;text-decoration:none;font-weight:600}
+.hero{padding:3.5rem 1rem;text-align:center}
+.hero h2{margin:0 0 .5rem;font-size:1.75rem}
+.btn{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;padding:1rem 0}
+.features article{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(15,23,42,0.06)}
+.contact{padding:1rem 0}
+form{display:grid;gap:.5rem;max-width:520px}
+label{font-size:.9rem}
+input,textarea{padding:.6rem;border:1px solid #d9e6f7;border-radius:6px}
+.site-footer{padding:1rem 0;text-align:center;color:#475569}
+@media (min-width:700px){.hero h2{font-size:2.25rem}}

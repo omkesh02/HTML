@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Small Website — Example</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Small Website</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <h2>Simple, responsive starter</h2>
+      <p>Clean layout you can copy and adapt.</p>
+      <p><a class="btn" href="#contact">Get in touch</a></p>
+    </section>
+
+    <section id="features" class="features">
+      <article>
+        <h3>Responsive</h3>
+        <p>Works on phones, tablets, and desktops.</p>
+      </article>
+      <article>
+        <h3>Minimal</h3>
+        <p>Few styles to get started quickly.</p>
+      </article>
+      <article>
+        <h3>Accessible</h3>
+        <p>Semantic HTML and readable sizes.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form onsubmit="alert('Demo submit — replace with real handler'); return false;">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 Small Website — Example</div>
+  </footer>
+</body>
+</html>
