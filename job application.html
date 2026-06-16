@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application</title>
+</head>
+<body>
+    <form action="#" method="post">
+
+        <h2>Job Application Form</h2>
+         
+        <hr>
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="father_name">Father's Name:</label>
+        <input type="text" id="father_name" name="father_name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Mobile">Mobile:</label>
+        <input type="tel" id="Mobile" name="Mobile" required><br><br>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="Male" name="Gender" value="Male" >Male
+        <input type="radio" id="Female"  name="Gender" value="Female">Female<br><br>
+
+        <label for="marital_status">Marital Status:</label>
+        <input type="radio" id="married" name="marital_status" value="Married">Married
+        <input type="radio" id="unmarried" name="marital_status" value="Unmarried">Unmarried<br><br>
+        </fieldset>
+        <br>
+
+        <hr> 
+        <fieldset>
+        <legend>Education Details</legend>
+        <label for="10th_percentage">10th Percentage:</label>
+        <input type="number" id="10th_percentage" name="10th_percentage" step="0.01" min="0" max="100" required><br><br>
+
+        <label for="12th percentage">12th Percentage:</label>
+        <input type="number" id="12th_percentage" name="12th_percentage" step="0.01" min="0" max="100" required><br><br>
+
+        <label for="Graduation" >Graduation Percentage:</label>
+        <input type="number" id="Graduation" name="Graduation" step="0.01" min="0" max="100" required><br><br>
+
+        <label for="university" >University:</label>
+        <input type="text" id="university" name="university" required><br><br>
+
+        </fieldset>
+        <br>
+
+        <hr>
+        <fieldset>
+        <legend>Work Experience</legend>
+        
+        <label for="total_experience">Total Experience (in years):</label>
+        <input type="number" id="total_experience" name="total_experience" step="0.1" min="0" required><br><br>
+
+        <label for="previous_company">Previous Company:</label>
+        <input type="text" id="previous_company" name="previous_company"><br><br>
+
+        <label for="salary">Annual Salary:</label>
+        <input type="number" id="salary" name="salary" step="0.01" min="0" required><br><br>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+        <br>
+
+        <hr>
+        <fieldset>
+        <legend>Address Details</legend>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="pin code">Pin Code:</label>
+        <input type="number" id="pin code" name="pin code" required><br><br>
+
+        <label for="country" >Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+        </fieldset>
+        <br>
+
+        <hr><fieldset>
+        <legend>photo & signature</legend>
+        <label for="photo" >Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <label for="signature" >Upload Signature:</label>
+        <input type="file" id="signature" name="signature" accept="image/*" required><br><br>
+        </fieldset>
+        <br>
+
+        <hr><fieldset>
+        <legend>required documents</legend>
+        <label for="resume" >Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br> 
+          
+
+        <label for="Adhaar card">Upload Adhaar Card:</label>
+        <input type="file" id="Adhaar card" name="Adhaar card" accept=".pdf,.jpg,.png" required><br><br>
+
+        <label for="pan card">Upload PAN Card:</label>
+        <input type="file" id="pan card" name="pan card" accept=".pdf,.jpg,.png" required><br><br>
+
+        <label for="degree certificate">Upload Degree Certificate:</label>
+        <input type="file" id="degree certificate" name="degree certificate" accept=".pdf,.jpg,.png" required><br><br>
+
+        <label 10th & 12th mark sheet>Upload 10th & 12th Mark Sheet:</label>
+        <input type="file" id="10th_12th_mark_sheet" name=" 10th_12th_mark_sheet" accept=".pdf,.jpg,.png" required><br><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+        <legend>Declaration</legend>
+        <p><input type="checkbox" id="declaration" name="declaration" required>I hereby declare that the information provided above is true and accurate to the best of my knowledge. I understand that any false information may lead to disqualification from the application process.</p>
+        
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+        
+    </form>
+    
+</body>
+</html>
